@@ -8,7 +8,7 @@ function App() {
   
 
 
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=Celsius&appid=b61a4f2ce5d6071705d7e88fddbcd9bf`
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=Metric&appid=b61a4f2ce5d6071705d7e88fddbcd9bf`
   const searchLocation = (event) => {
     if(event.key === 'Enter'){
       axios.get(url).then((response) => {
